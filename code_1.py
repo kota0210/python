@@ -21,3 +21,15 @@ y = '太郎'
 
 result = f'{x + y}さん'
 print(result)
+
+s = 'abc'
+
+print(f'right : {s:*>8}')
+print(f'center : {s:*^8}')
+print(f'left : {s:*<8}')
+
+i = 1234
+print(f'zero padding: {i:08}')
+
+i = 1234567890
+print(f'comma: {i:,}')
