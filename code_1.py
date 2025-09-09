@@ -33,3 +33,22 @@ print(f'zero padding: {i:08}')
 
 i = 1234567890
 print(f'comma: {i:,}')
+
+try:
+    print(1/0)
+except ZeroDivisionError as e:
+    print(e)
+    print(type(e))
+
+def divide_else_finally(a, b):
+    try:
+        print(a/b)
+    except ZeroDivisionError as e:
+        print('catch ZeroDivisionError:',e)
+    else:
+        print('finish (no error)')
+    finally:
+        print('all finish')
+
+divide_else_finally(1, 2)
+divide_else_finally(1, 0)
