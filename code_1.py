@@ -52,3 +52,9 @@ def divide_else_finally(a, b):
 
 divide_else_finally(1, 2)
 divide_else_finally(1, 0)
+
+age = 17
+
+result = '成人'if age >= 20 else '子供'
+
+print(result)
